@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Pharmacy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+ 
+</style>
+<body>
+  <header>
+    <div class="html-pages">
+      <nav>
+        <button class="hamburger" id="hamburger-btn"></button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="checkout.html">CART/CHECKOUT</a></li>
+          <li><a href="address.html">LOCATE US</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <section>
+    <div id="brandLogo">
+<img src="images/istockphoto-1473835464-612x612 (1).jpg" alt="hhh">
+      <p>Shop Our Products</p>
+    </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="product-list">
+  
+      <div class="product-pages">
+        <img src="images/paracetamol.jpeg" alt="Paracetamol 500mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Paracetamol 500mg Tablets</h3>
+          <p>Effective for fever and mild pain relief.</p>
+        </div>
+        <div class="product-price">₦750.00</div>
+        <button class="add-to-cart" data-name="Paracetamol 500mg Tablets" data-price="750">Add to Cart</button>
+      </div>
+
+     
+      <div class="product-pages">
+        <img src="images/ibuprofen.jpg" alt="Ibuprofen 200mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Ibuprofen 200mg Tablets</h3>
+          <p>Anti-inflammatory for pain and swelling.</p>
+        </div>
+        <div class="product-price">₦1,200.00</div>
+        <button class="add-to-cart" data-name="Ibuprofen 200mg Tablets" data-price="1200">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-pages">
+        <img src="images/amoxi.webp" alt="Amoxicillin 500mg Capsules" class="product-images">
+        <div class="product-details">
+          <h3>Elicorid Clarithromycin Rabeprazole Tabs</h3>
+          <p>Antibiotic for bacterial infections.</p>
+        </div>
+        <div class="product-price">₦6,000</div>
+        <button class="add-to-cart" data-name="Amoxicillin 500mg Capsules" data-price="2500">Add to Cart</button>
+      </div>
+
+
+      <div class="product-pages">
+        <img src="images/now.webp" alt="Vitamin C 1000mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Vitamin C 1000mg Tablets</h3>
+          <p>Boosts immunity and skin health.</p>
+        </div>
+        <div class="product-price">₦8,600.00</div>
+        <button class="add-to-cart" data-name="Vitamin C 1000mg Tablets" data-price="1800">Add to Cart</button>
+      </div>
+
+
+      <div class="product-pages">
+        <img src="images/cough.webp" alt="Cough Syrup (Dextromethorphan)" class="product-images">
+        <div class="product-details">
+          <h3>Robitussin Dry Cough Syrup 100ml</h3>
+          <p>Relieves dry cough and throat irritation.</p>
+        </div>
+        <div class="product-price">₦3,200.00</div>
+        <button class="add-to-cart" data-name="Cough Syrup (Dextromethorphan)" data-price="950">Add to Cart</button>
+      </div>
+
+    
+      <div class="product-pages">
+        <img src="images/antacid.png" alt="Antacid Tablets (Aluminum Hydroxide)" class="product-images">
+        <div class="product-details">
+          <h3>Antacid Tablets (Aluminum Hydroxide)</h3>
+          <p>Neutralizes stomach acid for heartburn relief.</p>
+        </div>
+        <div class="product-price">₦600.00</div>
+        <button class="add-to-cart" data-name="Antacid Tablets (Aluminum Hydroxide)" data-price="600">Add to Cart</button>
+      </div>
+
+
+      <div class="product-pages">
+        <img src="images/reloadwomen_311x.avif" alt="Multivitamin Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Reload Women x30 Tab</h3>
+          <p>Daily supplement for overall health.</p>
+        </div>
+        <div class="product-price">₦11,850.00</div>
+        <button class="add-to-cart" data-name="Multivitamin Tablets" data-price="2200">Add to Cart</button>
+      </div>
+
+     
+      <div class="product-pages">
+        <img src="images/spirin.webp" alt="Aspirin 75mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Aspirin 75mg Tablets</h3>
+          <p>Low-dose for blood thinning and pain.</p>
+        </div>
+        <div class="product-price">₦850.00</div>
+        <button class="add-to-cart" data-name="Aspirin 75mg Tablets" data-price="850">Add to Cart</button>
+      </div>
+
+      
+      <div class="product-pages">
+        <img src="images/cetrizine.webp" alt="Cetirizine 10mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Cetirizine 10mg Tablets</h3>
+          <p>Antihistamine for allergies and hay fever.</p>
+        </div>
+        <div class="product-price">₦1,100.00</div>
+        <button class="add-to-cart" data-name="Cetirizine 10mg Tablets" data-price="1100">Add to Cart</button>
+      </div>
+
+  
+      <div class="product-pages">
+        <img src="images/omeprazole.webp" alt="Omeprazole 20mg Capsules" class="product-images">
+        <div class="product-details">
+          <h3>Ulsakit Omeprazole 20mg+Tinidazole 500mg+Clarithromycin 250mg Softgels</h3>
+          <p>Reduces stomach acid for ulcers and GERD.</p>
+        </div>
+        <div class="product-price">₦14,700.00</div>
+        <button class="add-to-cart" data-name="Omeprazole 20mg Capsules" data-price="3000">Add to Cart</button>
+      </div>
+
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Calcium Supplements" class="product-images">
+        <div class="product-details">
+          <h3>Calcium Supplements</h3>
+          <p>Supports bone health and prevents deficiency.</p>
+        </div>
+        <div class="product-price">₦1,400.00</div>
+        <button class="add-to-cart" data-name="Calcium Supplements" data-price="1400">Add to Cart</button>
+      </div>
+
+  
+      <div class="product-pages">
+        <img src="https://images.pexels.com/photos/3683049/pexels-photo-3683049.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Loratadine 10mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Loratadine 10mg Tablets</h3>
+          <p>Non-drowsy antihistamine for allergies.</p>
+        </div>
+        <div class="product-price">₦900.00</div>
+        <button class="add-to-cart" data-name="Loratadine 10mg Tablets" data-price="900">Add to Cart</button>
+      </div>
+
+      <!-- Product 13 -->
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1550572017-edd951aa8ca9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Expectorant Syrup" class="product-images">
+        <div class="product-details">
+          <h3>Expectorant Syrup</h3>
+          <p>Helps loosen mucus for chest congestion.</p>
+        </div>
+        <div class="product-price">₦1,050.00</div>
+        <button class="add-to-cart" data-name="Expectorant Syrup" data-price="1050">Add to Cart</button>
+      </div>
+
+      <!-- Product 14 -->
+      <div class="product-pages">
+        <img src="images/clofenac.webp" alt="Diclofenac 50mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Diclofenac 50mg Tablets</h3>
+          <p>Strong anti-inflammatory for joint pain.</p>
+        </div>
+        <div class="product-price">₦420.00</div>
+        <button class="add-to-cart" data-name="Diclofenac 50mg Tablets" data-price="1600">Add to Cart</button>
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Folic Acid 5mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Folic Acid 5mg Tablets</h3>
+          <p>Essential for pregnancy and cell health.</p>
+        </div>
+        <div class="product-price">₦500.00</div>
+        <button class="add-to-cart" data-name="Folic Acid 5mg Tablets" data-price="500">Add to Cart</button>
+      </div>
+
+      <!-- Product 16 -->
+      <div class="product-pages">
+        <img src="https://images.pexels.com/photos/3683056/pexels-photo-3683056.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Iron Supplements" class="product-images">
+        <div class="product-details">
+          <h3>Iron Supplements</h3>
+          <p>Treats anemia and boosts energy.</p>
+        </div>
+        <div class="product-price">₦1,300.00</div>
+        <button class="add-to-cart" data-name="Iron Supplements" data-price="1300">Add to Cart</button>
+      </div>
+
+      <!-- Product 17 -->
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ciprofloxacin 500mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Ciprofloxacin 500mg Tablets</h3>
+          <p>Antibiotic for urinary tract infections.</p>
+        </div>
+        <div class="product-price">₦2,800.00</div>
+        <button class="add-to-cart" data-name="Ciprofloxacin 500mg Tablets" data-price="2800">Add to Cart</button>
+      </div>
+
+      <!-- Product 18 -->
+      <div class="product-pages">
+        <img src="https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Naproxen 250mg Tablets" class="product-images">
+        <div class="product-details">
+          <h3>Naproxen 250mg Tablets</h3>
+          <p>NSAID for arthritis and menstrual pain.</p>
+        </div>
+        <div class="product-price">₦1,400.00</div>
+        <button class="add-to-cart" data-name="Naproxen 250mg Tablets" data-price="1400">Add to Cart</button>
+      </div>
+
+      <!-- Product 19 -->
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Vitamin D3 1000IU Capsules" class="product-images">
+        <div class="product-details">
+          <h3>Vitamin D3 1000IU Capsules</h3>
+          <p>Supports bone and immune health.</p>
+        </div>
+        <div class="product-price">₦2,000.00</div>
+        <button class="add-to-cart" data-name="Vitamin D3 1000IU Capsules" data-price="2000">Add to Cart</button>
+      </div>
+
+      <!-- Product 20 -->
+      <div class="product-pages">
+        <img src="https://images.pexels.com/photos/3683049/pexels-photo-3683049.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Diphenhydramine Syrup" class="product-images">
+        <div class="product-details">
+          <h3>Diphenhydramine Syrup</h3>
+          <p>Antihistamine for allergies and sleep aid.</p>
+        </div>
+        <div class="product-price">₦800.00</div>
+        <button class="add-to-cart" data-name="Diphenhydramine Syrup" data-price="800">Add to Cart</button>
+      </div>
+
+      <!-- Product 21 -->
+      <div class="product-pages">
+        <img src="https://images.unsplash.com/photo-1550572017-edd951aa8ca9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Loperamide 2mg Capsules" class="product-images">
+        <div class="product-details">
+          <h3>Loperamide 2mg Capsules</h3>
+          <p>Stops diarrhea and restores normal bowel function.</p>
+        </div>
+        <div class="product-price">₦700.00</div>
+        <button class="add-to-cart" data-name="Loperamide 2mg Capsules" data-price="800">Add to Cart</button>
+      </div>
+   
+
+<footer>
+  <p>&copy; 2025 Bagansbeyond. All rights reserved.</p>
+</footer>
+       
+
+  <script>
+    // Cart functionality
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function updateCart() {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+        const existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          cart.push({ name, price, quantity: 1 });
+        }
+        updateCart();
+        alert(`${name} added to cart!`);
+      });
+    });
+
+    // Hamburger menu toggle
+    document.getElementById('hamburger-btn').addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.classList.toggle('show');
+    });
+
+    // Ensure touch-friendly interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('touchstart', () => {}, { passive: true });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+  <div class="header__logo">
+    <a href="index.html">
+      <img src="images/istockphoto-1473835464-612x612.jpg" alt="Your Brand" class="header__logo-image">
+    </a>
+  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+         <li><a href="checkout.html">CART/CHECKOUT</a></li>
+          <li><a href="address.html">LOCATE US</a></li>
+        </ul>
+    </nav>
+
+    <h1>SHOP.</h1>
+   
+  </header>
+
+  <section>
+    <form action="">
+      <label for="search">Search here</label>
+     <input type="search" id="search" name="search">
+    </form>
+  </section>
+
+
+ <div class="product-list">
+
+    
+    <div class="product-pages">
+      <div class="product-images">
+        ><img src="images/Artboard15_35c0e96e-2f2e-4fad-b7f4-a95da14a00c8_220x.avif" alt="A"
+      </div>
+      <div class="product-details">
+        <h1>Xonadine 180mg Tablets Fexofenadine</h1>
+      </div>
+      <div class="product-price">
+        <p>₦1,500.00</p>
+      </div>
+      <div class="add-tocart">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    
+    <div class="product-pages">
+      <div class="product-images">
+        <img src="images/Artboard22_72d5daac-74c7-4b94-9052-13876000b7ab_220x.avif" alt="B">
+      </div>
+      <div class="product-details">
+        <h1>Seretide Diskus 50/250mcg</h1>
+      </div>
+      <div class="product-price">
+        <p>₦21,300.00</p>
+      </div>
+      <div class="add-tocart">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    
+    <div class="product-pages">
+      <div class="product-images">
+        <img src="images/Artboard23_220x.avif" alt="C">
+      </div>
+      <div class="product-details">
+        <h1>Antallerge Eye Drops 10ml</h1>
+      </div>
+      <div class="product-price">
+        <p>₦1,500.00</p>
+      </div>
+      <div class="add-tocart">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    
+    <div class="product-pages">
+      <div class="product-images">
+        <img src="images/Artboard33_220x.avif" alt="D">
+      </div>
+      <div class="product-details">
+        <h1>Arthrotec 75mg Tab x100</h1>
+      </div>
+      <div class="product-price">
+        <p>₦2,450.00</p>
+      </div>
+      <div class="add-tocart">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="product-pages">
+      <div class="product-images">
+        <img src="images/Artboard52_a1597ad0-8afe-460e-a532-64338b98d3bb_220x.avif" alt="E">
+      </div>
+      <div class="product-details">
+        <h1>Trusopt Solution Eye Drops</h1>
+      </div>
+      <div class="product-price">
+        <p>₦7,350.00</p>
+      </div>
+      <div class="add-tocart">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+
+
+ <div class="product-pages">
+  <div class="product-images">
+<img src="images/Emgyl-suspension_220x.avif" alt="y">
+  </div>
+  <div class="product-details">
+    <h1>Emgyl Suspension</h1>
+  </div>
+  <div class="product-price">
+    <p>₦800.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+  <div class="product-pages">
+  <div class="product-images">
+   <img src="images/strepsils-sore-throat-cough-lozenges-x-24-p9037-14965_medium_7db80cf5-305e-4d77-856a-498a4b3a0c6f_220x.avif" alt="i">
+  </div>
+  <div class="product-details">
+    <h1>Strepsil Lozenges x24</h1>
+  </div>
+  <div class="product-price">
+    <p>₦1,500.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+
+  <div class="product-pages">
+  <div class="product-images">
+  <img src="images/Artboard85_59a889cc-b8ee-495a-9b16-4cca50bec4d4_220x.avif" alt="i">
+  </div>
+  <div class="product-details">
+    <h1>Lonart DS Artemether Lumefantrine Tab</h1>
+  </div>
+  <div class="product-price">
+    <p>₦2,800.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+  <div class="product-pages">
+  <div class="product-images">
+  <img src="images/amatem-forte_220x.avif" alt="u">
+  </div>
+  <div class="product-details">
+    <h1>Amatem Forte Artemether Lumefantrine 80/480mg Tab x6</h1>
+  </div>
+  <div class="product-price">
+    <p>₦2,700.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+  <div class="product-pages">
+  <div class="product-images">
+<img src="images/Artboard82_f8e4294b-07fd-4a56-82f7-c8afba7d9814_220x.avif" alt="j">
+  </div>
+  <div class="product-details">
+    <h1>Lokmal QS Artemether Lumefantrine + Paracetamol 500mg 80/480mg x6</h1>
+  </div>
+  <div class="product-price">
+    <p>₦2,100.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+
+  <div class="product-pages">
+  <div class="product-images">
+  <img src="images/Artboard55_220x.webp" alt="m">
+  </div>
+  <div class="product-details">
+    <h1>Camosunate 150/50mg 1-6Yrs Tab</h1>
+  </div>
+  <div class="product-price">
+    <p>₦1,400.00</p>
+  </div>
+  <div class="add-tocart">
+    <button>Add to cart</button>
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  
+  <footer><p>&copy; 2025 Bagansbeyond. All rights reserved.</p></footer>
+
+</body>
+</html>-->

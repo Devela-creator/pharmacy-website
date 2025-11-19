@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Pharmacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="html-pages">
+      <nav>
+        <button class="hamburger" id="hamburger-btn"></button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="checkout.html">CART/CHECKOUT</a></li>
+          <li><a href="address.html">LOCATE US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="brand-name">
+      <h1>EGBEDA Pharmacy</h1>
+      <p>Your Cart & Checkout</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="total">Total: ₦0</p>
+      <button id="clear-cart">Clear Cart</button>
+    </section>
+
+    <section class="form-container">
+      <h2>Checkout</h2>
+      <form id="checkout-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+
+        <input type="submit" value="Place Order">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bagansbeyond. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsDiv = document.getElementById('cart-items');
+    const totalDiv = document.getElementById('total');
+
+    function renderCart() {
+      cartItemsDiv.innerHTML = '';
+      let total = 0;
+      cart.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.innerHTML = `
+          <p>${item.name} - ₦${item.price} x ${item.quantity} = ₦${item.price * item.quantity}
+          <button onclick="removeItem(${index})">Remove</button></p>
+        `;
+        cartItemsDiv.appendChild(itemDiv);
+        total += item.price * item.quantity;
+      });
+      totalDiv.textContent = `Total: ₦${total}`;
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    document.getElementById('clear-cart').addEventListener('click', () => {
+      cart = [];
+      localStorage.removeItem('cart');
+      renderCart();
+    });
+
+    document.getElementById('checkout-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Order placed! (This is a demo - no real payment processed.)');
+      cart = [];
+      localStorage.removeItem('cart');
+      renderCart();
+    });
+
+    // Hamburger menu toggle
+    document.getElementById('hamburger-btn').addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.classList.toggle('show');
+    });
+
+    // Ensure touch-friendly interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCart(); // Load cart on page load
+      document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('touchstart', () => {}, { passive: true });
+      });
+    });
+  </script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="site-header">
+  <div class="header__logo">
+    <a href="index.html">
+      <img src="images/istockphoto-1473835464-612x612.jpg" alt="Your Brand" class="header__logo-image">
+    </a>
+  </div>
+   <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="checkout.html">CART/CHECKOUT</a></li>
+         <li><a href="address.html">LOCATE US</a></li>
+      </ul>
+    </nav>
+
+    <h1>CART/CHECKOUT</h1>
+    <p>Checkout here... </p>
+  </header><br><br>
+  
+  <section>
+             <div class="form-container">
+       <fieldset>
+        <legend>CUSTOMER DETAILS</legend>
+       
+         
+    <form action="" autocomplete="on">
+      
+        
+    <label for="fname" class="label">FIRST NAME</label><br><br>
+    <input type="text" name="fname" id="fname"required autofocus ><br><br>
+
+    <label for="lname"  class="label">LAST NAME</label><br><br>
+    <input type="text" name="lname" id="lname"required><br><br>
+
+    <label for="add"  class="label">ADDRESS</label><br><br>
+    <input type="text" name="add" id="add"required><br><br>
+
+    <label for="st"  class="label">STATE</label><br><br>
+  <select name="st" id="st" required>
+    <option value="ab">Abia</option>
+     <option value="an">Anambra</option>
+      <option value="dl">Delta</option>
+       <option value="ed">Edo</option>
+        <option value="ek">Ekiti</option>
+           <option value="en">Enugu</option>
+            <option value="kd">Kaduna</option>
+             <option value="kn">Kano</option>
+         <option value="kg">Kogi</option>
+          <option value="lg">Lagos</option>
+           <option value="abj">Abuja</option>
+            <option value="os">Osun</option>
+  </select>
+         </datalist><br><br><br>
+    <label for="email"  class="label">E-MAIL ADDRESS</label><br><br>
+    <input type="email" name="email" id="email" required><br><br>
+
+    <label for="no"  class="label">TEL.NO</label><br><br>
+    <input type="tel" name="no" id="no" placeholder="+234" required> <br><br><br><br>
+
+  <label for="addinfo"  class="label">Additional Information</label>
+    <textarea name="addinfo" id="addinfo" rows="10" cols="50"required></textarea><br><br><br><br><br>
+  
+    <div id="pay">PAY INTO <br>
+    <p>1011391108
+      vfdbank
+    </p>
+    <p>Egbeda pharmacy</p><br>
+    </div>
+
+    <label for="file"  class="label">Upload payment reciept below...</label><br><br>
+    <input type="file" name="file" id="file" multiple required><br><br><br><br><br>
+
+    <input type="submit" value="SUBMIT">
+
+    <input type="reset" value="GO TO HOMEPAGE">
+
+
+
+
+
+
+</fieldset>
+
+
+    </form>
+    </div>
+  </section>
+   <footer><p>&copy; 2025 Bagansbeyond. All rights reserved.</p></footer>
+
+  </body>
+
+</html>
+
+  

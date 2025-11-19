@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locate Us - Pharmacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="html-pages">
+      <nav>
+        <button class="hamburger" id="hamburger-btn"></button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="checkout.html">CART/CHECKOUT</a></li>
+          <li><a href="address.html">LOCATE US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="brand-name">
+      <h1>EGBEDA Pharmacy</h1>
+      <p>Find Us Here</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Location</h2>
+      <p>Address: 123 Pharmacy Street, Lagos, Nigeria</p>
+      <p>Phone: +234 123 456 7890</p>
+      <!-- Add a map embed here if needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bagansbeyond. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    document.getElementById('hamburger-btn').addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.classList.toggle('show');
+    });
+
+    // Ensure touch-friendly interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('touchstart', () => {}, { passive: true });
+      });
+    });
+  </script>
+</body>
+</html>

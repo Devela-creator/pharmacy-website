@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="html-pages">
+      <nav>
+        <button class="hamburger" id="hamburger-btn"></button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="checkout.html">CART/CHECKOUT</a></li>
+          <li><a href="address.html">LOCATE US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="brand-name">
+      <h1>EGBEDA</h1>
+      <h2>
+        Pharmacy 
+        <img src="images/istockphoto-1473835464-612x612 (1).jpg" alt="Pharmacy logo">
+      </h2>
+      <p>Welcome...</p>
+    </div>
+  </header>
+
+  <main>
+    <div id="display">
+      <img src="images/ChatGPT Image Sep 8, 2025, 10_26_31 AM.png" alt="Pharmacy storefront">
+    </div>
+
+    <section>
+      <div id="abtimg">
+        <img src="images/istockphoto-1473835464-612x612.jpg" alt="Cross logo" width="100px">
+      </div>
+
+      <div id="open">
+        ABOUT US.
+        <p>
+          Incorporated by the Corporate Affairs Commission. Licensed by the Pharmacist Council of Nigeria (PCN) 
+          to operate as a retail community pharmacy chain.
+        </p>
+      </div>
+      <button onclick="alert('More info coming soon!')">Learn More</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bagansbeyond. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+
+    document.getElementById('hamburger-btn').addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.classList.toggle('show');
+    });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('touchstart', () => {}, { passive: true });
+      });
+    });
+  </script>
+</body>
+</html>
